@@ -1,0 +1,92 @@
+body{
+    background-image: url("../imagenes/ITACHI_GOD.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    color: black;
+    background-position: top center;
+}
+
+.container{
+    background-color: rgba(255,255,255,0.3);
+}
+
+h1{
+    font-family: 'Staatliches', cursive;
+}
+
+p, li, a{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 25px;
+}
+
+nav{
+    background-color: rgba(255,255,255,0.1);
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav1, .nav2{
+    border: 1px solid black;
+    padding: 5px;
+    background-color: #bc2127;
+    font-family: 'Staatliches';
+    text-emphasis-color: black;
+}
+
+a{
+    color: black;
+}
+
+header h1, header p{
+    display: flex;
+    justify-content: center;
+}
+
+.ima{
+    margin: 10px;
+    width: 40%;
+}
+
+.aside1{
+    background-color: rgba(255,255,255,0.1);
+    float: right;
+    border: dotted 1px;
+    padding: 2px;
+    margin: 10px;
+    width: 30%;
+}
+
+.aside2{
+    background-color: rgba(255,255,255,0.1);
+    float: right;
+    border: dotted 1px;
+    padding: 2px;
+    margin: 10px;
+    width: 45%;
+}
+
+.aside3{
+    background-color: rgba(255,255,255,0.1);
+    float: right;
+    border: dotted 1px;
+    padding: 2px;
+    margin: 10px;
+    width: 30%;
+}
+
+.fotos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.lateral{
+    display: flex;
+    align-items: center;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+}
