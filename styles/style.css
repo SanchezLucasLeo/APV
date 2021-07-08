@@ -10,6 +10,10 @@ body{
     background-color: rgba(255,255,255,0.3);
 }
 
+header, footer{
+    background-color: rgba(255,255,255,0.3);
+}
+
 h1{
     font-family: 'Staatliches', cursive;
 }
@@ -20,9 +24,8 @@ p, li, a{
 }
 
 nav{
-    background-color: rgba(255,255,255,0.1);
-    display: flex;
-    justify-content: space-around;
+    background-color: rgba(255,255,255,0.3);
+    margin: auto;
 }
 
 .nav1, .nav2{
@@ -30,11 +33,42 @@ nav{
     padding: 5px;
     background-color: #bc2127;
     font-family: 'Staatliches';
-    text-emphasis-color: black;
+    margin: 5px;
+    margin-bottom: 0px;
+    text-decoration: none;
 }
 
-a{
+.principal1{
+    display: block;
+}
+
+.secundario{
+    display: flex;
+    justify-content:flex-start;
+}
+
+.interno{
+    border: 0.5px solid black;
+    padding: 3px;
+    background-color: #bc2127;
+    font-family: 'Staatliches';
+    font-size: 20px;
+    margin: 5px;
+    margin-top: 0px;
+    text-decoration: none;
+}
+
+a:link, :visited{
     color: black;
+}
+
+a:hover{
+    color: white;
+    background-color: black;
+}
+
+a:active{
+    border: outset white;
 }
 
 header h1, header p{
@@ -89,4 +123,12 @@ footer{
     justify-content: center;
     font-family: 'Inconsolata', monospace;
     font-size: 20px;
+}
+
+.card{
+    margin-bottom: 10%;
+}
+.imagen1{
+    display: flex;
+    justify-content: center;
 }

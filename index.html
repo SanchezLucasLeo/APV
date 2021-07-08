@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,93 +8,158 @@
     <title>Mis Animes</title>
     <script src="https://kit.fontawesome.com/24f7deaef4.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Staatliches&display=swap" rel="stylesheet">    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
-    <div class="container">
+    <div class="container-fluid">
 
         <header>
-            <h1>Algo de mi 
+            <h1>Algo de mi
                 <i class="far fa-address-card"></i>
             </h1>
-            <p>Bueno no se me ocurrio nada mejor que hacer esta pagina con los animes que estoy viendo, 
-                los que pienso ver y los que vi, asi que...</p>
+            <p>Bueno no se me ocurrio nada mejor que hacer esta pagina con los animes que estoy viendo,los que pienso
+                ver y los que vi, asi que...</p>
         </header>
 
         <nav>
-            <a class="nav1" href="index.html">Pagina Principal</a>
-            <a class="nav2" href="Animes.html">Animes</a>
+            <div class="principal">
+                <div class="secundario">
+                    <a class="nav1" href="index.html">Pagina Principal</a>
+                    <a class="nav2" href="Animes.html">Animes</a>
+                </div>
+            </div>
+            <hr>
+            <div class="principal">
+                <div class="secundario">
+                    <a class="interno" href="#lista">Actuales</a>
+                    <a class="interno" href="#lista2">Ya Vistos</a>
+                    <a class="interno" href="#proximos">Por Ver</a>
+                    <a class="interno" href="#relleno">Relleno</a>
+                </div>
+            </div>
         </nav>
 
         <br>
 
-        <section>
-            <article>
-                <h2>Los tres animes que estoy viendo por orden de importancia:</h2>
-                <ol>
-                    <li>Naruto Shippuden    <i class="fas fa-user-ninja"></i> </li>
-                    <li>Boku No Hero    <i class="fab fa-superpowers"></i> </li>
-                    <li>K-ON <i class="fas fa-icons"></i> </li>
-                </ol>
+        <div class="container">
+            <section>
+                <article id="lista">
+                    <h2>Los tres animes que estoy viendo por orden de importancia:</h2>
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="card">
+                                    <div class="imagen1"><img class="imagen1" src="imagenes/kakashi2.png" alt="Imagen de naruto shippuden" width="61%"></div>
+                                    <div class="card-title"><h5>1- Naruto Shippuden </h5></div>
+                                    <div class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit.nam.
+                                    </div>
+                                    <div class="card-footer"> <button class="btn btn-secondary"><a target="_blank"
+                                                href="https://www3.animeflv.net/anime/naruto-shippuden-hd">Ver</a></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="card">
+                                    <img src="imagenes/shoto.jpg" alt="Imagen de shoto">
+                                    <div class="card-title"><h5>2- Boku No Hero <i class="fab fa-superpowers"></i></h5></div>
+                                    <div class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit.nam.
+                                    </div>
+                                    <div class="card-footer"> <button class="btn btn-secondary"><a target="_blank"
+                                                href="https://www3.animeflv.net/anime/boku-no-hero-academia-2016">Ver</a></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="card">
+                                    <img src="imagenes/concierto.jpg" alt="Imagen de un concierto">
+                                    <div class="card-title"><h5>3- K-ON <i class="fas fa-icons"></i>/h5></div>
+                                    <div class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                        elit.Libero,nam.</div>
+                                    <div class="card-footer"> <button class="btn btn-secondary"><a target="_blank"
+                                                href="https://www3.animeflv.net/anime/k-on">Ver</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <br>
+
+                <article id="lista2">
+                    <h2>Algunos de los animes que vi:</h2>
+                    <ul>
+                        <li>Ao no exorcist</li>
+                        <li> Tokio Ghoul</li>
+                        <li> Noragami</li>
+                        <li> Charlotte</li>
+                        <li> Aldnoah zero</li>
+                    </ul>
+                </article>
+
+                <br>
+
                 <div class="fotos">
-                    <img src="imagenes/naruto.png" alt="Imagen de naruto chikito" width="30%"> 
+                    <img src="imagenes/naruto.png" alt="Imagen de naruto chikito" width="30%">
                     <img src="imagenes/sasuke.png" width="30%" alt="sauke uchiha">
                 </div>
 
-                <br><br>
+                <br>
 
-            </article>
-
-            <article>
-                <h2>Algunos de los animes que vi:</h2>
-                <ul>
-                    <li>Ao no exorcist</li>
-                    <li>Tokio Ghoul</li>
-                    <li>Noragami</li>
-                    <li>Charlotte</li>
-                    <li>Aldnoah zero</li>
-                </ul>
+                <article id="proximos">
+                    <h2>Algunos de los que pienso ver:</h2>
+                    <p>
+                        Kimetsu no yaiba, Yakusoku no neverland, Dororo, Vinland saga, Dr stone, Enenen no shobutai,
+                        Toradora, Meiji tokyo renka, Ao haru ride,
+                        Watashi ga motete dousunda, Given, Seishun buta yarou, Mirai nikki, Watamote, Kono subarashii
+                        sekai ni shukufuku wo, Himouto umaru chan,
+                        Black clover, Owari no seraph, Fullmetal alchemist, Boku dake ga inai machi, Kakegurui, Death
+                        parade, Jojo´s bizare adventure, Koi to uso,
+                        Domestic na kanojo, Watakoi, Dangarompa, Hotarubi no Mori e, I want to eat your pancreas, Kyokai
+                        no kanata, Jibaku shonen hanako-kun, Fclc,
+                        Ergo proxy, Devilman crybaby, Darwin´s game, Banana fish, Erased
+                    </p>
                 </article>
 
-            <br>
+                <br>
 
-            <article>
-                <h2>Algunos de los que pienso ver:</h2>
-                <p>
-                    Kimetsu no yaiba, Yakusoku no neverland, Dororo, Vinland saga, Dr stone, Enenen no shobutai, Toradora, Meiji tokyo renka, Ao haru ride, 
-                    Watashi ga motete dousunda, Given, Seishun buta yarou, Mirai nikki, Watamote, Kono subarashii sekai ni shukufuku wo, Himouto umaru chan, 
-                    Black clover, Owari no seraph, Fullmetal alchemist, Boku dake ga inai machi, Kakegurui, Death parade, Jojo´s bizare adventure, Koi to uso, 
-                    Domestic na kanojo, Watakoi, Dangarompa, Hotarubi no Mori e, I want to eat your pancreas, Kyokai no kanata, Jibaku shonen hanako-kun, Fclc, 
-                    Ergo proxy, Devilman crybaby, Darwin´s game, Banana fish, Erased
-                </p>
-            </article>
-            
-            <br>
+                <article id="relleno">
+                    <h2>Y algo de relleno como en naruto:</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                        irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error tempora iste blanditiis. Ad nam
+                        nihil amet cum! Autem delectus nulla enim iste
+                        perferendis magni doloribus expedita aliquid repellat. Iure, possimus!
+                    </p>
+                </article>
 
-            <article>
-                <h2>Y algo de relleno como en naruto:</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error tempora iste blanditiis. Ad nam nihil amet cum! Autem delectus nulla enim iste 
-                    perferendis magni doloribus expedita aliquid repellat. Iure, possimus!
-                </p>
-            </article>
+                <br>
 
-            <br>
-           
-        </section>
-        
+            </section>
+        </div>
+
         <hr>
 
         <footer>
-            <strong>Pagina de Lucas Sanchez</strong> 
+            <strong>Pagina de Lucas Sanchez</strong>
         </footer>
 
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
